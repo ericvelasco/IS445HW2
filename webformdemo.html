@@ -25,15 +25,15 @@
             <legend>Customer Information</legend>
             <div>
                 <label for="name">Full Name: </label>
-                <input required="required" type="text" name="name" style="width: 330px" placeholder="Firstname Lastname"/>
+                <input required="required" type="text" name="name" placeholder="Firstname Lastname"/>
             </div>
             <div>
                 <label for="email">Email address: </label>
-                <input required="required" type="email" name="email" style="width: 320px" />
+                <input required="required" type="email" name="email" />
             </div>
             <div>
                 <label for="phone">Phone: </label>
-                <input required="required" type="tel" name="phone" style="width: 320px" />
+                <input required="required" type="tel" name="phone" />
             </div>
         </fieldset>
         <fieldset>
@@ -56,18 +56,18 @@
             </div>
             <div>
                 <label for="numberofnights">Number of nights (valid number is from 1 to 30): </label>
-                <input type="number" min="1" max="30" step="1" name="numberofnights" />
+                <input type="number" min="1" max="30" step="1" name="numberofnights" value="1" />
             </div>
             <div>
                 <label for="numberofguests">Number of guests (the maximum guests is 3): </label>
-                <input type="number" min="0" max="3" step="1" name="numberofguests" />
+                <input type="number" min="0" max="3" step="1" name="numberofguests" value="0" />
             </div>
         </fieldset>
         <fieldset>
             <legend>Other Information</legend>
             <div>
                 <label for="promo">Promo code: </label>
-                <input type="text" name="promo" />
+                <input type="text" name="promo" pattern="[a-zA-Z0-9]" title="Please only use alphanumeric characters"/>
             </div>
             <div>
                 <label for="specialnote">Special Notes: </label>
@@ -77,9 +77,10 @@
         <input type="button" name="clear-btn" value="Clear form" />
         <input type="submit" name="submit" value="Request Reservation" />
     </form>
+    <br />
 
     <div>Contact Information</div>
-    <a href="#" value="email-link">Email: ericvelasco1@gmail.com</a>
+    <a href="#">Email: ericvelasco1@gmail.com</a>
     <div><i>Phone: (310)427-2130</i></div>
 </body>
 </html>
